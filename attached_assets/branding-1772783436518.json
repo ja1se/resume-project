@@ -1,0 +1,142 @@
+{
+  "colorScheme": "light",
+  "fonts": [
+    {
+      "family": "Funnel Display",
+      "role": "display"
+    }
+  ],
+  "colors": {
+    "primary": "#DDF160",
+    "accent": "#9F8BE7",
+    "background": "#FAF7F6",
+    "textPrimary": "#161616",
+    "link": "#9F8BE7"
+  },
+  "typography": {
+    "fontFamilies": {
+      "primary": "Funnel Display",
+      "heading": "Funnel Display"
+    },
+    "fontStacks": {
+      "heading": [
+        "Funnel Display",
+        "sans-serif"
+      ],
+      "body": [
+        "Funnel Display",
+        "sans-serif"
+      ],
+      "paragraph": [
+        "Funnel Display",
+        "sans-serif"
+      ]
+    },
+    "fontSizes": {
+      "h1": "22px",
+      "h2": "120px",
+      "body": "22px"
+    }
+  },
+  "spacing": {
+    "baseUnit": 12,
+    "borderRadius": "18px"
+  },
+  "components": {
+    "input": {
+      "background": "transparent",
+      "textColor": "#161616",
+      "borderColor": null,
+      "borderRadius": "0px",
+      "borderRadiusCorners": {
+        "topLeft": "0px",
+        "topRight": "0px",
+        "bottomRight": "0px",
+        "bottomLeft": "0px"
+      },
+      "shadow": "none"
+    },
+    "buttonPrimary": {
+      "background": "#DDF160",
+      "textColor": "#161616",
+      "borderColor": "#DDF160",
+      "borderRadius": "42px",
+      "borderRadiusCorners": {
+        "topLeft": "42px",
+        "topRight": "42px",
+        "bottomRight": "42px",
+        "bottomLeft": "42px"
+      },
+      "shadow": "none"
+    },
+    "buttonSecondary": {
+      "background": "transparent",
+      "textColor": "#161616",
+      "borderColor": "#161616",
+      "borderRadius": "28px",
+      "borderRadiusCorners": {
+        "topLeft": "28px",
+        "topRight": "28px",
+        "bottomRight": "28px",
+        "bottomLeft": "28px"
+      },
+      "shadow": "none"
+    }
+  },
+  "images": {
+    "logo": "https://demo.oceanthemes.site/rayo/wp-content/themes/rayo/images/logo.svg",
+    "favicon": "https://demo.oceanthemes.site/rayo/wp-content/uploads/sites/14/2025/10/icon.svg",
+    "ogImage": null,
+    "logoHref": "https://demo.oceanthemes.site/rayo/",
+    "logoAlt": "Rayo"
+  },
+  "__llm_logo_reasoning": {
+    "selectedIndex": 0,
+    "reasoning": "Selected #0 because it is visible, located in the header, and matches the brand name 'Rayo' from the page title. It is the most prominent logo available.",
+    "confidence": 0.9,
+    "source": "llm"
+  },
+  "__llm_button_reasoning": {
+    "primary": {
+      "index": 0,
+      "text": "Contact UsContact Us",
+      "reasoning": "Button #0 has a vibrant green color (#DDF160) which is a brand color and typically used for primary CTAs. The text 'Contact Us' is action-oriented, making it a strong candidate for the primary button."
+    },
+    "secondary": {
+      "index": 3,
+      "text": "Download CVDownload CV",
+      "reasoning": "Button #3 has a transparent background, making it suitable as a secondary button. It offers a less prominent action ('Download CV') compared to the primary button."
+    },
+    "confidence": 0.95
+  },
+  "personality": {
+    "tone": "modern",
+    "energy": "medium",
+    "targetAudience": "creative professionals"
+  },
+  "designSystem": {
+    "framework": "custom",
+    "componentLibrary": ""
+  },
+  "confidence": {
+    "buttons": 0.95,
+    "colors": 0.9,
+    "overall": 0.925
+  },
+  "__llm_metadata": {
+    "logoSelection": {
+      "llmCalled": true,
+      "llmSucceeded": true,
+      "finalSource": "llm",
+      "rawLogoSelection": {
+        "selectedLogoIndex": 0,
+        "selectedLogoReasoning": "Selected #0 because it is visible, located in the header, and matches the brand name 'Rayo' from the page title. It is the most prominent logo available.",
+        "confidence": 0.9
+      }
+    },
+    "buttonClassification": {
+      "llmCalled": true,
+      "llmSucceeded": true
+    }
+  }
+}
