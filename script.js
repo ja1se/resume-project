@@ -26,25 +26,63 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Hero Animation
     function animateHero() {
-        gsap.from('.hero-content h1', {
-            y: 100,
-            opacity: 0,
-            duration: 1,
-            ease: 'power4.out'
-        });
+        const tl = gsap.timeline();
 
-        gsap.from('.hero-image-wrapper', {
+        tl.from('.rayo-hero-image', {
             scale: 1.1,
             opacity: 0,
             duration: 1.5,
             ease: 'power4.out'
+        })
+        .from('.mxd-hero-greeting', {
+            y: 30,
+            opacity: 0,
+            duration: 0.8,
+            ease: 'power3.out'
+        }, '-=1')
+        .from('.mxd-hero-title', {
+            y: 50,
+            opacity: 0,
+            duration: 1,
+            ease: 'power4.out'
+        }, '-=0.5')
+        .from('.mxd-hero-meta > *', {
+            y: 30,
+            opacity: 0,
+            duration: 0.8,
+            stagger: 0.2,
+            ease: 'power3.out'
+        }, '-=0.5');
+
+        // Mouse Move Effect (mxd-move)
+        const moveElements = document.querySelectorAll('.mxd-move');
+        window.addEventListener('mousemove', (e) => {
+            const mouseX = e.clientX;
+            const mouseY = e.clientY;
+            
+            moveElements.forEach(el => {
+                const rect = el.getBoundingClientRect();
+                const elCenterX = rect.left + rect.width / 2;
+                const elCenterY = rect.top + rect.height / 2;
+                
+                // Move amount relative to distance from mouse
+                const moveX = (mouseX - elCenterX) * 0.05;
+                const moveY = (mouseY - elCenterY) * 0.05;
+                
+                gsap.to(el, {
+                    x: moveX,
+                    y: moveY,
+                    duration: 1,
+                    ease: 'power2.out'
+                });
+            });
         });
 
         // Marquee-like Tag Animation
-        gsap.to('.tag-row', {
-            x: -200,
+        gsap.to('.mxd-hero-tags .tag-row', {
+            x: -300,
             scrollTrigger: {
-                trigger: '.hero-tags',
+                trigger: '.mxd-hero-tags',
                 start: 'top bottom',
                 end: 'bottom top',
                 scrub: 1
