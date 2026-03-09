@@ -111,7 +111,7 @@ header nav a:hover {
 }
 
 /* Background Blur Overlay */
-.mxd-hero-bg-overlay {
+.hero-profile {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -123,6 +123,46 @@ header nav a:hover {
     z-index: 0;
     pointer-events: none;
     opacity: 0.6;
+}
+
+.hero-decor1, .hero-decor2, .hero-decor3 {
+    position: absolute;
+    z-index: 2;
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-decor1 {
+    top: 15%;
+    left: 10%;
+    font-size: 80px;
+    color: #FF5E5E; /* Game: Reddish */
+}
+
+.hero-decor2 {
+    top: 25%;
+    right: 15%;
+    font-size: 90px;
+    color: #4A90E2; /* Book: Blue */
+}
+
+.hero-decor3 {
+    bottom: 25%;
+    left: 15%;
+    font-size: 85px;
+    color: #50E3C2; /* Travel: Teal */
+}
+
+/* 3D Effect for Icons */
+.hero-decor1 i, .hero-decor2 i, .hero-decor3 i {
+    filter: drop-shadow(4px 4px 0px rgba(0,0,0,0.1)) 
+            drop-shadow(8px 8px 15px rgba(0,0,0,0.15));
+    background: linear-gradient(135deg, currentColor 0%, #333 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: perspective(500px) rotateY(-10deg) rotateX(10deg);
 }
 
 .blur-16 {

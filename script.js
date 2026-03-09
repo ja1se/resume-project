@@ -54,6 +54,21 @@ document.addEventListener('DOMContentLoaded', () => {
             ease: 'power3.out'
         }, '-=0.5');
 
+        // Floating Decorations Animation
+        gsap.to('.hero-decor1, .hero-decor2, .hero-decor3', {
+            y: 'random(-20, 20)',
+            x: 'random(-10, 10)',
+            rotation: 'random(-5, 5)',
+            duration: 'random(2, 4)',
+            repeat: -1,
+            yoyo: true,
+            ease: 'sine.inOut',
+            stagger: {
+                amount: 1,
+                from: "random"
+            }
+        });
+
         // Mouse Move Effect (mxd-move)
         const moveElements = document.querySelectorAll('.mxd-move');
         window.addEventListener('mousemove', (e) => {
