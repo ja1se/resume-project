@@ -1,240 +1,489 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>hj cho - Personal Portfolio</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretendard-std@1.3.9/dist/web/static/pretendard-std.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>조희진 - 언어와 경험을 디자인하는 포트폴리오</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretendard-std@1.3.9/dist/web/static/pretendard-std.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-kopubworld@1.0.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-kopubworld@1.0.3/css/all.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/pretendard-std@1.3.9/subset.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="loader">
-        <div class="loader-percent">0%</div>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="load">
+      <div class="p-num">0%</div>
     </div>
 
-    <!-- Header -->
-    <header>
-        <div class="logo">
-            <img src="https://template.dsngrid.com/mexdot/light/assets/img/logo.png" alt="mexdot">
+    <!-- 헤더 -->
+    <header id="header" class="header">
+      <div class="h-in">
+        <div class="h-col h-left">
+          <div class="logo">
+            <a href="index.html">
+              <img src="images/logo.png" alt="Logo" />
+            </a>
+          </div>
         </div>
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#works">Works</a>
-            <a href="#pricing">Pricing</a>
-            <a href="#blog">Blog</a>
-        </nav>
-        <a href="#contact" class="btn-start">Start a Project</a>
+
+        <div class="h-col h-center">
+          <nav class="m-nav">
+            <ul class="m-list">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#services">About</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="h-col h-right">
+          <div class="h-rt">
+            <div id="t-btn" class="t-btn" title="Toggle Style">
+              <i class="fas fa-moon"></i>
+            </div>
+            <div id="m-btn" class="m-btn">
+              <div class="m-txt">
+                <span class="m-txt-open">Menu</span>
+                <span class="m-txt-close">Close</span>
+              </div>
+              <div class="m-icon"><span></span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 오버레이 메뉴 -->
+      <nav id="ol-nav" class="ol-nav">
+        <div class="ol-in">
+          <div class="ol-cnt">
+            <ul class="ol-list">
+              <li style="--i: 1"><a href="#home">Home</a></li>
+              <li style="--i: 2"><a href="#services">About</a></li>
+              <li style="--i: 3"><a href="#services">Skills</a></li>
+              <li style="--i: 4"><a href="#projects">Works</a></li>
+              <li style="--i: 5"><a href="#blog">Blog</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <main>
-        <div class="content">
-            <!-- Background Blur Element -->
-            <div class="hero-profile"></div>
+      <div class="content">
+        <div class="hero-profile"></div>
 
-            <!-- Floating Decoration Elements -->
-            <div class="hero-decor1">
-                <i class="fa-solid fa-gamepad"></i>
-            </div>
-            <div class="hero-decor2">
-                <i class="fa-solid fa-book-open"></i>
-            </div>
-            <div class="hero-decor3">
-                <i class="fa-solid fa-earth-americas"></i>
-            </div>
-
-            <section class="mxd-hero-section">
-                <div class="mxd-hero-container">
-                    
-                    <!-- Hero Image with Mouse Move Effect -->
-                    <div class="rayo-hero-image mxd-move">
-                        <img src="https://demo.oceanthemes.site/rayo/wp-content/uploads/sites/14/2025/10/ohome-22_hero-img.webp" alt="Hero Image">
-                    </div>
-
-                    <div class="mxd-hero-intro">
-                        <div class="mxd-hero-greeting">👋 Nice to see you!</div>
-                        <h1 class="mxd-hero-title">I’m Alex Walker, digital designer and illustrator based in Odesa, Ukraine.</h1>
-                    </div>
-
-                    <div class="mxd-hero-meta">
-                        <div class="mxd-hero-status">
-                            <span class="mxd-status-dot"></span>
-                            <span class="mxd-status-text">Available for freelance</span>
-                        </div>
-                        
-                        <div class="mxd-hero-stats">
-                            <div class="mxd-stat-item">
-                                <span class="mxd-stat-number">70+</span>
-                                <span class="mxd-stat-label">Successful projects</span>
-                            </div>
-                            <div class="mxd-stat-item">
-                                <span class="mxd-stat-number">3+</span>
-                                <span class="mxd-stat-label">Years of experience</span>
-                            </div>
-                        </div>
-
-                        <div class="mxd-hero-description">
-                            <p>Award-winning creative projects, over ten years of digital experience.</p>
-                        </div>
-                    </div>
-
-                    <div class="mxd-hero-tags">
-                        <div class="tag-row">
-                            <span class="mxd-tag">Midjourney</span>
-                            <span class="mxd-tag">AI</span>
-                            <span class="mxd-tag">Interactive design</span>
-                            <span class="mxd-tag">Frontend</span>
-                            <span class="mxd-tag">Motion design</span>
-                            <span class="mxd-tag">3d modeling</span>
-                            <span class="mxd-tag">Video editing</span>
-                            <span class="mxd-tag">HTML</span>
-                            <span class="mxd-tag">Branding</span>
-                            <span class="mxd-tag">Web design</span>
-                            <span class="mxd-tag">Editorial</span>
-                        </div>
-                    </div>
-
-                    <div class="mxd-scroll-indicator">
-                        <a href="#projects" class="mxd-scroll-link">
-                            <span class="mxd-scroll-text">Scroll for more</span>
-                            <div class="mxd-scroll-line"></div>
-                        </a>
-                    </div>
-
-                </div>
-            </section>
+        <!-- 장식 요소 -->
+        <div class="decor icon1">
+          <img src="images/pen.png" />
         </div>
 
-        <section id="projects" class="projects">
-            <div class="container">
-                <div class="section-header">
-                    <h2>Projects</h2>
-                    <a href="#" class="view-all">See All</a>
-                </div>
-                <div class="project-grid">
-                    <article class="project-card">
-                        <div class="project-tags">UI/UX, Web design, Development</div>
-                        <h3><a href="#">Rayo template creative studio solution</a></h3>
-                        <div class="project-img-placeholder"></div>
-                    </article>
-                    <article class="project-card">
-                        <div class="project-tags">Midjourney, Editorial</div>
-                        <h3><a href="#">AI experiments themed illustrations series</a></h3>
-                        <div class="project-img-placeholder"></div>
-                    </article>
-                    <article class="project-card">
-                        <div class="project-tags">Branding, Mobile</div>
-                        <h3><a href="#">Delivery service mobile app design</a></h3>
-                        <div class="project-img-placeholder"></div>
-                    </article>
-                </div>
+        <section class="sec-hero">
+          <div class="wrap">
+            <div class="h-img move">
+              <img src="images/me.png" />
             </div>
-        </section>
 
-        <section id="services" class="services">
-            <div class="marquee-container">
-                <div class="marquee-content">
-                    <span>I Can Do Best • I Can Do Best • I Can Do Best • I Can Do Best • I Can Do Best • I Can Do Best • </span>
-                </div>
+            <div class="h-intro">
+              <div class="greet">안녕하세요!<br />브랜드의 숨은 결을 찾아내는 시각적 통역사, 한 결 다른 디자이너 조희진 입니다.</div>
+              <h1 class="h-title">
+                언어전공자의 분석력과 여행, 독서 등 콘텐츠 소비로 다져진<br />
+                유연한 사고를 바탕으로 가치 있는 디지털 경험을 설계합니다.
+              </h1>
             </div>
-            <div class="container">
-                <div class="service-list">
-                    <div class="service-item">
-                        <div class="service-info">
-                            <h2>Digital art and graphic design</h2>
-                            <div class="service-tags">UI/UX, Web design, Packing, Motion, 3D models</div>
-                            <p>We create visually compelling designs that enhance user experience. We make sure your brand’s visuals resonate with your audience.</p>
-                        </div>
-                        <div class="service-img">
-                            <img src="https://demo.oceanthemes.site/rayo/wp-content/uploads/sites/14/2025/10/800x800_ser-01.webp" alt="Service 1">
-                        </div>
-                    </div>
-                    <div class="service-item">
-                        <div class="service-info">
-                            <h2>Creative development</h2>
-                            <div class="service-tags">Frontend, Interactions, Backend, Mobile Apps</div>
-                            <p>We build high-performance websites and applications using modern technologies. Our solutions are designed to be scalable and functional for optimal performance.</p>
-                        </div>
-                        <div class="service-img">
-                            <img src="https://demo.oceanthemes.site/rayo/wp-content/uploads/sites/14/2025/10/800x800_ser-02.webp" alt="Service 2">
-                        </div>
-                    </div>
-                    <div class="service-item">
-                        <div class="service-info">
-                            <h2>Brand identity</h2>
-                            <div class="service-tags">Brand strategy, Logo design, Guidelines, Rebranding</div>
-                            <p>From logo design to comprehensive brand strategies, we ensure your business stands out with a unique visual identity and consistent messaging across all touchpoints.</p>
-                        </div>
-                        <div class="service-img">
-                            <img src="https://demo.oceanthemes.site/rayo/wp-content/uploads/sites/14/2025/10/800x800_ser-03.webp" alt="Service 3">
-                        </div>
-                    </div>
-                    <div class="service-item">
-                        <div class="service-info">
-                            <h2>Digital marketing solutions</h2>
-                            <div class="service-tags">Strategy, Social media, SEO, Optimization, Campaigns</div>
-                            <p>SEO and content marketing, social media management and paid campaigns – we help you reach and engage your target audience effectively.</p>
-                        </div>
-                        <div class="service-img">
-                            <img src="https://demo.oceanthemes.site/rayo/wp-content/uploads/sites/14/2025/10/800x800_ser-04.webp" alt="Service 4">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
 
-        <section class="cta-banner">
-            <div class="container">
-                <div class="cta-content">
-                    <h2>Web design is evolving rapidly, and I strive to stay ahead.</h2>
-                    <div class="cta-actions">
-                        <a href="#" class="btn-primary">My Works</a>
-                        <a href="#" class="btn-secondary">Download CV</a>
-                    </div>
-                </div>
-            </div>
-        </section>
+            <div class="h-meta">
+              <div class="status">
+                <span class="dot"></span>
+                <span class="s-text">새로운 프로젝트 협업 가능</span>
+              </div>
 
-        <section id="insights" class="insights">
-            <div class="container">
-                <div class="section-header">
-                    <h2>Recent insights</h2>
-                    <p>Inspiring ideas, creative insights, and the latest in design and tech. Fueling innovation for your digital journey.</p>
-                    <a href="#" class="view-all">All Articles</a>
+              <div class="stats">
+                <div class="s-item">
+                  <span class="s-num">70+</span>
+                  <span class="s-label">완료된 프로젝트</span>
                 </div>
-                <div class="insight-grid">
-                    <article class="insight-card">
-                        <div class="insight-tags">Editorial, Motion design</div>
-                        <h3><a href="#">Mastering the art of minimalist web design with impact</a></h3>
-                    </article>
-                    <article class="insight-card">
-                        <div class="insight-tags">Branding, Technology</div>
-                        <h3><a href="#">Crafting immersive 3d worlds with modern tools</a></h3>
-                    </article>
-                    <article class="insight-card">
-                        <div class="insight-tags">3d Modeling, Frontend</div>
-                        <h3><a href="#">The role of branding in creating memorable experiences</a></h3>
-                    </article>
+                <div class="s-item">
+                  <span class="s-num">3+</span>
+                  <span class="s-label">실무 경력</span>
                 </div>
+              </div>
             </div>
+
+            <div class="h-tags">
+              <div class="tag-row">
+                <span class="tag">#언어전공자</span>
+                <span class="tag">#독서러버</span>
+                <span class="tag">#다채로운 문화콘텐츠 향유</span>
+                <span class="tag">#여행가</span>
+                <span class="tag">#유연한사고</span>
+                <span class="tag">#인문학적통찰</span>
+                <span class="tag">#사용자중심</span>
+                <span class="tag">#창의적문제해결</span>
+              </div>
+            </div>
+
+            <div class="scroll">
+              <a href="#projects" class="s-link">
+                <span class="s-txt">scroll</span>
+                <div class="s-line"></div>
+              </a>
+            </div>
+          </div>
         </section>
+      </div>
+
+      <section id="services" class="sec-ser">
+        
+        <div class="mq-wrap">
+          <div class="mq-txt">
+            <span>언어는 사고의 틀을 넓힙니다 • 경험은 그 틀을 채웁니다 • 유연하게 생각합니다 • </span>
+          </div>
+        </div>
+                <div class="wrap">
+          <div class="sec-head">
+            <h2>About me</h2>
+            <p>다양한 프로젝트 경험을 통해 다져진 전문적인 기술 스택입니다.</p>
+          </div>
+        <div class="wrap">
+          <div class="ser-list">
+            <div class="ser-item">
+              <div class="ser-info">
+                <h2>언어 전공자의 정교한 소통</h2>
+                <div class="ser-tags">텍스트 설계, 브랜딩, 로컬라이징</div>
+                <p>언어학적 지식을 바탕으로 사용자에게 가장 정확하고 매력적인 메시지를 전달합니다. 단어 하나가 주는 무게를 이해합니다.</p>
+              </div>
+
+            </div>
+            <div class="ser-item">
+              <div class="ser-info">
+                <h2>다양한 취미로 다져진 유연함</h2>
+                <div class="ser-tags">독서, 여행, 게임, 콘텐츠 분석</div>
+                <p>독서를 통한 통찰력, 여행을 통한 개방성, 콘텐츠 소비를 통한 전략적 사고를 하나로 묶어 고정관념에 얽매이지 않는 유연한 해결책을 제시합니다.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Gerold Style Resume Section -->
+      <section id="resume" class="resume-section">
+        <div class="wrap">
+          <div class="resume-container">
+            <!-- Experience Column -->
+            <div class="resume-column">
+              <h2><i class="fas fa-briefcase"></i> My Experience</h2>
+              <div class="resume-items">
+                <div class="resume-item">
+                  <span class="r-date">2023 - Present</span>
+                  <h3 class="r-title">Senior UI/UX Designer</h3>
+                  <p class="r-location">Creative Agency, Seoul</p>
+                </div>
+                <div class="resume-item">
+                  <span class="r-date">2021 - 2023</span>
+                  <h3 class="r-title">Junior Visual Designer</h3>
+                  <p class="r-location">Design Studio, Incheon</p>
+                </div>
+                <div class="resume-item">
+                  <span class="r-date">2020 - 2021</span>
+                  <h3 class="r-title">Design Intern</h3>
+                  <p class="r-location">Tech Startup, Seoul</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Education Column -->
+            <div class="resume-column">
+              <h2><i class="fas fa-graduation-cap"></i> My Education</h2>
+              <div class="resume-items">
+                <div class="resume-item">
+                  <span class="r-date">2016 - 2020</span>
+                  <h3 class="r-title">Bachelor of Visual Design</h3>
+                  <p class="r-location">University of Arts, Seoul</p>
+                </div>
+                <div class="resume-item">
+                  <span class="r-date">2020 - 2021</span>
+                  <h3 class="r-title">UI/UX Design Masterclass</h3>
+                  <p class="r-location">Online Academy</p>
+                </div>
+                <div class="resume-item">
+                  <span class="r-date">2015 - 2016</span>
+                  <h3 class="r-title">Art Foundation Program</h3>
+                  <p class="r-location">Design Institute</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills (Progress) Section -->
+      <section id="skills" class="tj-progress-section">
+        <div class="wrap">
+          <div class="sec-head">
+            <h2>My Skills</h2>
+            <p>다양한 프로젝트 경험을 통해 다져진 전문적인 기술 스택입니다.</p>
+          </div>
+
+          <div class="skills-grid">
+            <!-- Skill 1 -->
+            <div class="skill-item" data-percent="90">
+              <div class="progress-circle">
+                <svg class="progressbar" viewBox="0 0 100 100">
+                  <circle class="bg-circle" cx="50" cy="50" r="45"></circle>
+                  <circle class="progress-bar" cx="50" cy="50" r="45"></circle>
+                </svg>
+                <div class="number"><span class="counter">0</span>%</div>
+              </div>
+              <div class="skill-info">
+                <h4>Figma</h4>
+                <p>컴포넌트 및 베리언츠를 활용한 정교한 시스템 설계</p>
+              </div>
+            </div>
+
+            <!-- Skill 2 -->
+            <div class="skill-item" data-percent="85">
+              <div class="progress-circle">
+                <svg class="progressbar" viewBox="0 0 100 100">
+                  <circle class="bg-circle" cx="50" cy="50" r="45"></circle>
+                  <circle class="progress-bar" cx="50" cy="50" r="45"></circle>
+                </svg>
+                <div class="number"><span class="counter">0</span>%</div>
+              </div>
+              <div class="skill-info">
+                <h4>Photoshop</h4>
+                <p>비주얼 스토리텔링을 위한 고해상도 그래픽 합성</p>
+              </div>
+            </div>
+
+            <!-- Skill 3 -->
+            <div class="skill-item" data-percent="80">
+              <div class="progress-circle">
+                <svg class="progressbar" viewBox="0 0 100 100">
+                  <circle class="bg-circle" cx="50" cy="50" r="45"></circle>
+                  <circle class="progress-bar" cx="50" cy="50" r="45"></circle>
+                </svg>
+                <div class="number"><span class="counter">0</span>%</div>
+              </div>
+              <div class="skill-info">
+                <h4>Illustrator</h4>
+                <p>브랜드 아이덴티티를 위한 정교한 벡터 로고 디자인</p>
+              </div>
+            </div>
+
+            <!-- Skill 4 -->
+            <div class="skill-item" data-percent="75">
+              <div class="progress-circle">
+                <svg class="progressbar" viewBox="0 0 100 100">
+                  <circle class="bg-circle" cx="50" cy="50" r="45"></circle>
+                  <circle class="progress-bar" cx="50" cy="50" r="45"></circle>
+                </svg>
+                <div class="number"><span class="counter">0</span>%</div>
+              </div>
+              <div class="skill-info">
+                <h4>HTML/CSS</h4>
+                <p>웹 표준을 준수하는 시맨틱 마크업 및 스타일링</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="sec-pro">
+        <div class="wrap">
+          <div class="sec-head">
+            <h2>포트폴리오</h2>
+            <p>사용자 중심의 사고와 정교한 언어 설계로 가치 있는 경험을 만듭니다.</p>
+          </div>
+
+          <!-- Gerold Style Works Section Style-2 (List View) -->
+          <div class="works-section style-2">
+            <div class="works-list">
+              <!-- Item 1 -->
+              <a href="#" class="works-item-2">
+                <div class="left-content">
+                  <span class="work-num">01</span>
+                  <div class="work-info-2">
+                    <h3>사용자 경험 분석 및 개선 프로젝트</h3>
+                  </div>
+                </div>
+                <div class="right-content">
+                  <span class="work-cat-2">UI/UX Analysis</span>
+                  <div class="work-icon-2">
+                    <i class="fas fa-arrow-right"></i>
+                  </div>
+                </div>
+              </a>
+
+              <!-- Item 2 -->
+              <a href="#" class="works-item-2">
+                <div class="left-content">
+                  <span class="work-num">02</span>
+                  <div class="work-info-2">
+                    <h3>언어적 감성을 담은 브랜딩 전략</h3>
+                  </div>
+                </div>
+                <div class="right-content">
+                  <span class="work-cat-2">Branding</span>
+                  <div class="work-icon-2">
+                    <i class="fas fa-arrow-right"></i>
+                  </div>
+                </div>
+              </a>
+
+              <!-- Item 3 -->
+              <a href="#" class="works-item-2">
+                <div class="left-content">
+                  <span class="work-num">03</span>
+                  <div class="work-info-2">
+                    <h3>콘텐츠 소비 패턴 기반의 서비스 가이드</h3>
+                  </div>
+                </div>
+                <div class="right-content">
+                  <span class="work-cat-2">Content Strategy</span>
+                  <div class="work-icon-2">
+                    <i class="fas fa-arrow-right"></i>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="svc-wrap">
+            <div class="content-box">
+              <h2 class="category-number">01. <span class="title">UI/UX Design</span></h2>
+              <p class="description">사용자 니즈와 행동 패턴을 분석하여 문제 해결을 위한 최적의 경험을 설계합니다. 정성적/정량적 조사를 통해 인사이트를 도출하고 이를 시각적 인터페이스로 구현합니다.</p>
+              <ul class="feature-list">
+                <li>UI/UX Design</li>
+                <li>User Research</li>
+                <li>Mobile & Web App</li>
+              </ul>
+              <a href="#" class="learn-more-btn">Learn More ↗</a>
+            </div>
+
+            <div class="image-box">
+              <div class="placeholder-img">
+                <img src="images/project.png" alt="UI/UX Design">
+              </div>
+            </div>
+          </div>
+          <div class="svc-wrap2">
+            <div class="content-box">
+              <h2 class="category-number">02. <span class="title">UI/UX Design</span></h2>
+              <p class="description">사용자 니즈와 행동 패턴을 분석하여 문제 해결을 위한 최적의 경험을 설계합니다. 정성적/정량적 조사를 통해 인사이트를 도출하고 이를 시각적 인터페이스로 구현합니다.</p>
+              <ul class="feature-list">
+                <li>UI/UX Design</li>
+                <li>User Research</li>
+                <li>Mobile & Web App</li>
+              </ul>
+              <a href="#" class="learn-more-btn">Learn More ↗</a>
+            </div>
+
+            <div class="image-box">
+              <div class="placeholder-img">
+                <img src="images/project.png" alt="UI/UX Design">
+              </div>
+            </div>
+          </div>
+          <div class="svc-wrap">
+            <div class="content-box">
+              <h2 class="category-number">03. <span class="title">UI/UX Design</span></h2>
+              <p class="description">사용자 니즈와 행동 패턴을 분석하여 문제 해결을 위한 최적의 경험을 설계합니다. 정성적/정량적 조사를 통해 인사이트를 도출하고 이를 시각적 인터페이스로 구현합니다.</p>
+              <ul class="feature-list">
+                <li>UI/UX Design</li>
+                <li>User Research</li>
+                <li>Mobile & Web App</li>
+              </ul>
+              <a href="#" class="learn-more-btn">Learn More ↗</a>
+            </div>
+
+            <div class="image-box">
+              <div class="placeholder-img">
+                <img src="images/project.png" alt="UI/UX Design">
+              </div>
+            </div>
+          </div>
+
+          <div class="sec-head" style="margin-top: 150px">
+            <h2>포트폴리오</h2>
+            <p>사용자 중심의 사고와 정교한 언어 설계로 가치 있는 경험을 만듭니다.</p>
+          </div>
+
+          <!-- Filter & Wrapper -->
+          <div class="works-slider-container">
+            <div class="works-wrapper">
+              <!-- Project 1 -->
+              <div class="work-item">
+                <div class="work-img">
+                  <img src="images/project.png" alt="Project 1" />
+                </div>
+                <div class="work-content">
+                  <span class="work-category">UI/UX Design</span>
+                  <h3 class="work-title">언어적 감성을 담은 브랜드 스토리텔링 프로젝트</h3>
+                  <a href="#" class="work-link">
+                    View Project <i class="fas fa-arrow-up-right-from-square"></i>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Project 2 -->
+              <div class="work-item">
+                <div class="work-img">
+                  <img src="images/project.png" alt="Project 2" />
+                </div>
+                <div class="work-content">
+                  <span class="work-category">Content Strategy</span>
+                  <h3 class="work-title">사용자 경험 최적화를 위한 객관적 콘텐츠 분석</h3>
+                  <a href="#" class="work-link">
+                    View Project <i class="fas fa-arrow-up-right-from-square"></i>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Project 3 -->
+              <div class="work-item">
+                <div class="work-img">
+                  <img src="images/project.png" alt="Project 3" />
+                </div>
+                <div class="work-content">
+                  <span class="work-category">Branding</span>
+                  <h3 class="work-title">여행 경험을 녹여낸 글로벌 서비스 가이드 설계</h3>
+                  <a href="#" class="work-link">
+                    View Project <i class="fas fa-arrow-up-right-from-square"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="banner">
+        <div class="wrap">
+          <div class="b-txt">
+            <h2>생각의 경계가 없는 디자인, 언어의 힘으로 완성합니다.</h2>
+            <div class="btns">
+              <a href="#" class="btn-p">나의 강점 확인하기</a>
+              <a href="#" class="btn-s">이력서 내려받기</a>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-bottom">
-                <p>&copy; 2026 Rayo Portfolio. All rights reserved.</p>
-                <a href="#top" class="back-to-top">Back To Top</a>
-            </div>
+    <footer class="foot">
+      <div class="wrap">
+        <div class="f-bot">
+          <p>&copy; 2026 조희진 포트폴리오. 모든 권리 보유.</p>
+          <a href="#top" class="top-go">맨 위로 이동</a>
         </div>
+      </div>
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollToPlugin.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
